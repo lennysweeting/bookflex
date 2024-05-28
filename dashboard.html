@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookFlex - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>BookFlex</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Locum Register</h2>
+            <div class="locum-list">
+                <!-- This data should be dynamically populated from the backend -->
+                <div class="locum-item">
+                    <h3>Dr. John Doe</h3>
+                    <p>Speciality: General Optometry</p>
+                    <p>Areas: London, Manchester</p>
+                    <p>Availability: Mon-Fri, 9am-5pm</p>
+                    <button onclick="bookLocum('Dr. John Doe')">Book</button>
+                </div>
+                <!-- More locum items -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 BookFlex. All rights reserved.</p>
+    </footer>
+    <script>
+        function bookLocum(name) {
+            // Code to handle booking logic
+            alert('Locum ' + name + ' booked successfully!');
+        }
+    </script>
+</body>
+</html>
